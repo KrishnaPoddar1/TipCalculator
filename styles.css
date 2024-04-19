@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --primary-strongCyan: hsl(172, 67%, 45%);
+
+    --neutral-veryDarkCyan: hsl(183, 100%, 15%);
+    --neutral-darkGrayishCyan: hsl(186, 14%, 43%);
+    --neutral-grayishCyan: hsl(184, 14%, 56%);
+    --neutral-lightGrayishCyan: hsl(185, 41%, 84%);
+    --neutral-veryLightGrayishCyan: hsl(189, 41%, 97%);
+    --neutral-white: hsl(0, 0%, 100%);
+
+    --fs-forminputs: 24px;
+
+    --font-family: "Space Mono", monospace;
+    --font-weight: 700;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--neutral-lightGrayishCyan);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-white);
+    border-radius: 1rem 1rem 0 0 ;
+    padding: 2rem;
+    width: 24rem;
+}
+
+.text {
+    font-size: 0.8rem;
+    color: var(--neutral-darkGrayishCyan);
+}
+
+.text1 {
+    font-size: 0.8rem;
+}
+
+.calculate{
+    margin-bottom: 1.5rem;
+}
+
+
+
+.bill-section, .tip-section {
+    margin-bottom: 1rem;
+}
+
+.billvalue input, .noOfPeopleValue input {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: end;
+    border-radius: 0.5rem;
+    background-color: var(--neutral-veryLightGrayishCyan);
+    border: 1px solid var(--neutral-white);
+    font-size: var(--fs-forminputs);
+}
+
+.billvalue, .noOfPeopleValue {
+    position: relative;
+    margin-top: 0.5rem;
+}
+
+.billvalue img, .noOfPeopleValue img {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
+
+.tipvalue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.tipvalue button, .tipvalue input {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: var(--fs-forminputs);
+    border-radius: 0.5rem;
+    border: 1px solid var(--neutral-white);
+}
+
+.tipvalue button {
+    background-color: var(--neutral-veryDarkCyan);
+    color: var(--neutral-white);
+}
+
+.tipvalue button:focus{
+    background-color: var(--primary-strongCyan);
+    color: var(--neutral-veryDarkCyan);
+    cursor: pointer;
+}
+
+.tipvalue button:hover {
+    background-color: var(--neutral-lightGrayishCyan);
+    color: black;
+}
+
+.tipvalue input{
+    background-color: var(--neutral-veryLightGrayishCyan);
+}
+
+input:hover, button:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--neutral-lightGrayishCyan);
+}
+
+.peoplelable {
+    display: flex;
+    justify-content: space-between;
+}
+
+.peoplelable span{
+    color: red;
+}
+
+.error {
+    visibility:hidden;
+}
+
+.errorfocus, .errorfocus:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px red;
+}
+
+.display {
+    background-color: var(--neutral-veryDarkCyan);
+    color: var(--neutral-white);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.display button {
+    width: 100%;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-strongCyan);
+    color: var(--neutral-veryDarkCyan);
+    
+}
+
+.tipamount,.totalamount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.person {
+    display: block;
+    color: var(--neutral-grayishCyan);
+    font-size: 0.6rem;
+}
+
+.value {
+    font-size: 2rem;
+    color: var(--primary-strongCyan);
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        flex-direction: row;
+        width: 45rem;
+        border-radius: 1rem;
+    }
+
+    .calculate, .display {
+        width: 50%;
+    }
+
+    .calculate {
+        margin-right: 2rem;
+    }
+
+    .tipvalue {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .display button {
+        margin-top: 7rem;
+    }
+}
+

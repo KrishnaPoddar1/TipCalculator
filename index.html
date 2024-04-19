@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="main">
+
+    <h1>SPLI<br>TTER</h1>
+
+    <section class="container">
+      
+      <section class="calculate">
+        
+        <section class="bill-section">
+          <label for="bill" class="text">Bill</label>
+          <section class="billvalue">
+            <input type="number" placeholder="0" id="bill">
+            <img src="./images/icon-dollar.svg" alt="dollars icon">
+          </section>
+        </section>
+        
+        <section class="tip-section">
+          <label for="tipvalue" class="text">Select Tip %</label>
+          <section class="tipvalue">
+            <button value="5">5%</button>
+            <button value="10">10%</button>
+            <button value="15">15%</button>
+            <button value="25">25%</button>
+            <button value="50">50%</button>
+            <input type="number" placeholder="Custom" id="custom">
+          </section>
+        </section>
+
+        <section class="noOfPeople">
+          <section class="peoplelable">
+            <label for="" class="text">Number of People</label>
+            <span class="error" id="errorblock">Can't be zero</span>
+          </section>
+          
+          <section class="noOfPeopleValue">
+            <input type="number" id="peopleValue" placeholder="0">
+            <img src="./images/icon-person.svg" alt="Persons icon">
+          </section>
+        </section>
+        
+      </section>
+      
+      <section class="display">
+        
+        <section class="tipamount">
+          <p class="text1">Tip Amount <span class="person">/ person</span></p>
+          <p class="value" id="tipamount">$0.0</p>
+        </section>
+
+        <section class="totalamount">
+          <p class="text1">Total <span class="person">/ person</span></p>
+          <p class="value" id="totaltip">$0.0</p>
+        </section>
+
+        <button type="reset" id="reset"><b>Reset</b></button>
+      </section>
+    </section>
+  </main>
+<script src="./main.js"></script>
+</body>
+</html>
