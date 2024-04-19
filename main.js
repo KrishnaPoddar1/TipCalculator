@@ -47,7 +47,7 @@ people.addEventListener('keyup',(e)=>{
 function calculateTip(){
     const total = (tbill*tipAmount)/100.0;
     if(tPeople){
-        totalTip.textContent = "$"+total;
+        totalTip.textContent = "$"+((total+tbill)/tPeople);
         tipPerPerson.textContent = "$"+(total/tPeople);
     }else{
         totalTip.textContent = "$0.0";
