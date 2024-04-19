@@ -25,15 +25,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
 ![Desktop view](output/desktopview.PNG)
 ![Active view](output/desktopviewactive.PNG)
 ![Mobile view](output/mobileview.PNG)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- GitHub Repo URL: [GitHub Repo URL](https://github.com/KrishnaPoddar1/TipCalculator.git)
+- Live Site URL: [Live site URL](https://krishnapoddar1.github.io/TipCalculator/)
 
 ## My process
 
